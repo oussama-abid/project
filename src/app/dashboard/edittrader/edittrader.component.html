@@ -1,0 +1,57 @@
+
+  
+  
+<div class="midde_cont formbigscreen">
+    <div class="container-fluid">
+       <div class="row column_title">
+         
+       </div>
+       <!-- row -->
+       <div class="row column4 graph">
+  
+          <!-- funcation section -->
+         
+       
+          <!-- table section -->
+         
+          <!-- table section -->
+          <div class="col-md-8">
+             <div class="white_shd full margin_bottom_30">
+             
+  
+  
+  
+             
+                <div class="table_section padding_infor_info">
+                  <div class="formdiv">
+                    <h2 class="section-title align-right"> تعديل تاجر </h2>
+                    <form [formGroup]="updateForm" (ngSubmit)="onSubmit()" >
+                      <div class="form-group">
+                         
+                        <label for="email" class="form-label-right">اسم التاجر</label>
+                        <input type="text" class="newform" formControlName="name" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="form-label-right">البريد الالكتروني</label>
+                        <input type="email" class="newform" formControlName="email" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="type" class="form-label-right">رقم الهاتف</label>
+                        <input type="tel" class="newform" formControlName="phone" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="form-label-right"> العنوان</label>
+                        <input type="text" class="newform" formControlName="adress" required />
+                      </div>
+                      <div class="form-group submit-btn">
+                        <button type="submit" class="btn btn-primary"> تعديل</button>
+                      </div>
+                    </form>
+                </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+   
+  </div>

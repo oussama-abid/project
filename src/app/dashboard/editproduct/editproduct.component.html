@@ -1,0 +1,90 @@
+
+  
+  
+<div class="midde_cont formbigscreen">
+  <div class="container-fluid">
+     <div class="row column_title">
+       
+     </div>
+     <!-- row -->
+     <div class="row column4 graph">
+
+        <!-- funcation section -->
+       
+     
+        <!-- table section -->
+       
+        <!-- table section -->
+        <div class="col-md-8">
+           <div class="white_shd full margin_bottom_30">
+           
+
+
+
+              <div class="table_section padding_infor_info">
+                <div class="formdiv">
+                  <h2 class="section-title align-right"> تعديل البضائع</h2>
+                 
+                  <form [formGroup]="updateForm" (ngSubmit)="onSubmit()" >
+                    <div class="form-group">
+                      <label for="email" class="form-label-right">التاجر</label>
+                      <select id="usertype" name="usertype" class="newform" formControlName="email" required>
+                        <option value="{{ dealer.name }}" *ngFor="let dealer of dealers; let i = index">{{ dealer.name }}</option>
+                        
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="password" class="form-label-right">الكمية</label>
+                      <input type="number" class="newform" formControlName="password" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="type" class="form-label-right">النوع</label>
+                      <input type="text" class="newform" formControlName="type" required />
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="receivingDate" class="form-label-right">تاريخ الاستلام</label>
+                      <input type="date" class="newform" formControlName="receivingDate" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="shipmentDepartureDate" class="form-label-right">موعد تحرك الشحنة</label>
+                      <input type="date" class="newform" formControlName="shipmentDepartureDate" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="shipmentLocation" class="form-label-right">اين الشحنة الان</label>
+                      <select id="shipmentLocation" name="shipmentLocation" class="newform" formControlName="shipmentLocation" required>
+                        <option value="في المستودع">في المستودع</option>
+                        <option value="في الطريق الى الميناء">في الطريق الى الميناء</option>
+                        <option value="في الميناء">في الميناء</option>
+                        <option value="وصلت الى المدينة">وصلت الى المدينة</option>
+                        <option value="جاري تجهيزها للاستلام">جاري تجهيزها للاستلام</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="paidAmount" class="form-label-right"> المبلغ المدفوع</label>
+                      <input type="text" class="newform" formControlName="paidAmount" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="remainingAmount" class="form-label-right"> المبلغ المتبقي</label>
+                      <input type="text" class="newform" formControlName="remainingAmount" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="deliveryAddress" class="form-label-right">عنوان التوصيل</label>
+                      <input type="text" class="newform" formControlName="deliveryAddress" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="trader" class="form-label-right">اسم المستقبل</label>
+                      <input type="text" class="newform" formControlName="trader" required />
+                    </div>
+                    <div class="form-group submit-btn">
+                      <button type="submit" class="btn btn-primary"> تعديل</button>
+                    </div>
+                  </form>
+              </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+ 
+</div>

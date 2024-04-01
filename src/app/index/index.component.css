@@ -1,0 +1,107 @@
+
+  @media (min-width: 700px) {
+    #carouselExampleIndicators .carousel-item img {
+      height: 80vh !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .hideonsmall {
+        display: none; /* Hide on screens smaller than 768px */
+    }
+    .contact-message {
+      position: absolute; /* Position the message absolutely */
+      top: 50%; /* Position the message in the middle */
+      left: calc(100% + 10px); /* Adjust the distance between the button and the message */
+      transform: translateY(-50%); /* Center the message vertically */
+      background-color: #25d366;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      width: 80px !important;
+      font-size: 17px !important;
+      display: block; /* Initially hide the message */
+    }
+}
+.whatsapp-float:hover .contact-message {
+  display: inline-block; /* Show the message on hover */
+}
+
+.contact-message {
+  position: absolute; /* Position the message absolutely */
+  top: 50%; /* Position the message in the middle */
+  left: calc(100% + 10px); /* Adjust the distance between the button and the message */
+  transform: translateY(-50%); /* Center the message vertically */
+  background-color: #25d366;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 110px !important;
+  font-size: 20px;
+  display: block; /* Initially hide the message */
+}
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 40px;
+    left: 40px; /* Adjusted to position on the left side */
+    background-color: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  .whatsapp-float:hover {
+    background-color: #128c7e;
+  }
+  .whatsapp-float i {
+    transition: color 0.3s ease-in-out;
+  }
+  .whatsapp-float:hover i {
+    color: #fff;
+  }
+i{
+  color: black;
+}
+section {
+
+  transition: opacity 0.5s ease-in;
+}
+
+section.visible {
+  opacity: 1;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  animation: whatsapp-float 1s infinite alternate; /* Apply animation */
+}
+
+@keyframes whatsapp-float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px); /* Adjust the distance of the animation */
+  }
+}
+.animate {
+  opacity: 0; /* Initially hide animated elements */
+  transform: translateY(20px); /* Initial position */
+  transition: opacity 0.5s, transform 0.5s; /* Transition properties */
+}
+
+.fade-in {
+  opacity: 1; /* Fade in on scroll */
+  transform: translateY(0); /* Move to original position */
+}

@@ -1,0 +1,22 @@
+body,
+p,
+h1 {
+  direction: rtl;
+  
+}
+@media (min-width: 700px) {
+    label{
+        font-size: 18px !important;
+    }
+  }
+
+.align-right {
+  text-align: center;
+}
+.form-label-right {
+  display: block;
+  text-align: center;
+}
+.submit-btn {
+  text-align: center;
+}

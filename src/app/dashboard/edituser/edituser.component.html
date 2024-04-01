@@ -1,0 +1,66 @@
+<div class="midde_cont formbigscreen">
+  <div class="container-fluid">
+    <div class="row column_title"></div>
+    <!-- row -->
+    <div class="row column4 graph">
+      <!-- funcation section -->
+
+      <!-- table section -->
+
+      <!-- table section -->
+      <div class="col-md-8">
+        <div class="white_shd full margin_bottom_30">
+         
+          <div class="table_section padding_infor_info">
+            <div class="formdiv">
+              <h2 class="section-title align-right">تعديل حساب </h2>
+              <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                  <label for="email" class="form-label-right"
+                    >اسم المستخدم</label
+                  >
+                  <input
+                    type="text"
+                    class="newform"
+                    formControlName="name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password" class="form-label-right"
+                    >العنوان البريدي</label
+                  >
+                  <input
+                    type="email"
+                    class="newform"
+                    formControlName="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="type" class="form-label-right"
+                    >نوع المستخدم</label
+                  >
+                  <select
+                    id="usertype"
+                    name="usertype"
+                    class="newform"
+                    formControlName="type"
+                    required
+                  >
+                    <option value="admin">ادمن</option>
+                    <option value="controller">عضو مراقب</option>
+                    <option value="employee">عضو عامل</option>
+                  </select>
+                </div>
+                <div class="form-group submit-btn">
+                  <button type="submit" class="btn btn-primary">تعديل</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

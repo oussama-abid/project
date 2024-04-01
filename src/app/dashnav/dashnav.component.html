@@ -1,0 +1,83 @@
+
+
+<nav id="sidebar">
+  <div class="sidebar_blog_1">
+     <div class="sidebar-header">
+        <div class="logo_section">
+        </div>
+     </div>
+     <div class="sidebar_user_info">
+        <div class="icon_setting"></div>
+        <div class="user_profle_side">
+           <div class="user_info">
+            
+              <h6>{{this.currentUser.name}}</h6>
+              <p><span class="online_animation"></span> Online</p>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="sidebar_blog_2">
+
+     <ul class="list-unstyled components">
+      <li class="active"><a class="nav-link" routerLink="/dashboard" style="color: black !important; font-size: 20px !important;"> <i class="bi bi-truck"></i>   البضائع</a></li>
+      <li class="active" *ngIf="userType === 'admin'"><a  routerLink="/dashboard/users" style="color: black !important; font-size: 20px !important;"> <i class="bi bi-person-circle"></i>اعضاء الشركة</a></li>
+        <li class="active" ><a class="" routerLink="/dashboard/traders" style="color: black !important; font-size: 20px !important;"><i class="bi bi-file-person"></i> التجار</a></li>
+       
+
+     </ul>
+  </div>
+</nav>
+<!-- end sidebar -->
+<!-- right content -->
+<div id="content" style="background-color: white !important;">
+  <!-- topbar -->
+  <div class="topbar">
+     <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="full">
+           <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="bi bi-justify"></i></button>
+           
+           <div class="right_topbar">
+              <div class="icon_info">
+              
+                 <ul class="user_profile_dd">
+                    <li>
+                       <a class="dropdown-toggle" data-toggle="dropdown"><span style="font-size: 18px;" ><i class="bi bi-person-circle" style="margin-right: 4px;"></i>{{this.currentUser.name}}<i class="bi bi-arrow-down" style="margin-left: 9px;"></i></span></a>
+                       <div class="dropdown-menu" style="background-color: rgb(184, 184, 156);">
+                        <form (ngSubmit)="logout()">
+                          <button
+                        type="submit"
+                         
+                        class="dropdown-item"
+                      >
+                       LOGOUT
+                      </button>
+                    </form>
+
+                       </div>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </nav>
+  </div>
+<script>
+   var ps = new PerfectScrollbar('#sidebar');
+   "use strict";
+
+$(document).ready(function () {
+  /*-- sidebar js --*/
+  $('#sidebarCollapse').on('click', function () {
+    $('#sidebar').toggleClass('active');
+  });
+  /*-- calendar js --*/
+  $('#example14').calendar({
+    inline: true
+  });
+  $('#example15').calendar();
+  /*-- tooltip js --*/
+  $('[data-toggle="tooltip"]').tooltip();
+});
+var ps = new PerfectScrollbar('#sidebar');
+</script>

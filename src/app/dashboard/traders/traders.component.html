@@ -1,0 +1,95 @@
+
+
+<div class="midde_cont">
+  <div class="container-fluid">
+     <div class="row column_title">
+       
+     </div>
+     <!-- row -->
+     <div class="row column4 graph">
+
+        <!-- funcation section -->
+       
+     
+        <!-- table section -->
+       
+        <!-- table section -->
+        <div class="col-md-12">
+           <div class="white_shd full margin_bottom_30">
+           
+
+
+
+              <div class="full graph_head">
+                 <div class="heading1 margin_0">
+                  <div class="row"> 
+                    <div class="col">                <a
+                      routerLink="/dashboard/addptrader"
+                      class="btn btn-primary"
+                      style="text-align: right; float: right;  width: 160px !important;"
+                      >اضافة تاجر </a>
+                     </div>
+                     <div class="col"><h2>  التجار </h2></div>
+
+                 </div>
+    
+                 </div>
+              </div>
+              <div class="table_section padding_infor_info">
+                 <div class="table-responsive-sm table-hover">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">act</th>
+                
+                          <th scope="col">العنوان</th>
+                
+                          <th scope="col">رقم الهاتف</th>
+                          <th scope="col">البريد الالكتروني</th>
+                          <th scope="col">اسم التاجر</th>
+                          <th scope="col">#</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let dealer of dealers; let i = index">
+                          <td>
+                            <a  (click)="openConfirmationModal(dealer.id)" data-toggle="modal" data-target="#exampleModal">
+                              <i class="bi bi-trash"> </i>                            </a>
+                            <a (click)="edit(dealer.id)"><i class="bi bi-pencil"></i></a>
+                          </td>
+                          <td>{{ dealer.adress }}</td>
+                          <td>{{ dealer.phone }}</td>
+                          <td>{{ dealer.email }}</td>
+                          <td>{{ dealer.name }}</td>
+                
+                          <td>{{ i + 1 }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+ 
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: left !important;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: right !important;">
+        <h4> هل ترغب في حذف هذا العنصر؟  </h4>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+        <button type="button" class="btn btn-primary" (click)="isDeleteConfirmed = true; deleteProduct()">تاكيد </button>       </div>
+    </div>
+  </div>
+</div>

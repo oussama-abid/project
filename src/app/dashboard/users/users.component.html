@@ -1,0 +1,92 @@
+
+<div class="midde_cont">
+  <div class="container-fluid">
+    <div class="row column_title"></div>
+    <!-- row -->
+    <div class="row column4 graph">
+      <!-- funcation section -->
+
+      <!-- table section -->
+
+      <!-- table section -->
+      <div class="col-md-12">
+        <div class="white_shd full margin_bottom_30">
+          <div class="full graph_head">
+            <div class="heading1 margin_0">
+              <div class="row">
+                <div class="col">
+                  <a
+                  routerLink="/dashboard/register"
+                  class="btn btn-primary" 
+                  style="text-align: right; float: right; width: 160px !important;"
+                  >اضافة مستخدم </a
+                >
+                </div>
+                <div class="col" style="white-space: nowrap;"><h2>اعضاء الشركة</h2></div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="table_section padding_infor_info">
+            <div class="table-responsive-sm table-hover">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">act</th>
+
+                    <th scope="col">نوع المستخدم</th>
+                    <th scope="col">العنوان البريدي</th>
+
+                    <th scope="col">اسم المستخدم</th>
+                    <th scope="col">#</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let user of users; let i = index">
+                    <td>
+                      <a  (click)="openConfirmationModal(user.id)" data-toggle="modal" data-target="#exampleModal">
+                        <i class="bi bi-trash"> </i>                            </a>
+                    
+                      <a (click)="edit(user.id)"
+                        ><i class="bi bi-pencil"></i
+                      ></a>
+                    </td>
+                    <td>
+                      <span *ngIf="user.usertype == 'admin'">ادمن</span>
+                      <span *ngIf="user.usertype == 'employee'">عضو عامل</span>
+                      <span *ngIf="user.usertype == 'controller'">عضو مراقب</span>
+                    </td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.name }}</td>
+
+                    <td>{{ i + 1 }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: left !important;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: right !important;">
+        <h4> هل ترغب في حذف هذا العنصر؟  </h4>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+        <button type="button" class="btn btn-primary" (click)="isDeleteConfirmed = true; deleteProduct()">تاكيد </button>       </div>
+    </div>
+  </div>
+</div>

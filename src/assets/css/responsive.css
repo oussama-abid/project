@@ -1,0 +1,451 @@
+
+
+@media (min-width: 1200px) {
+    /*-- small sidebar --*/
+    #sidebar.active {
+        min-width: 90px !important;
+        max-width: 90px !important;
+        text-align: center !important;
+    }
+    #sidebar.active .sidebar-header h3,
+    #sidebar.active .CTAs {
+        display: none !important;
+    }
+    #sidebar.active .sidebar-header strong {
+        display: block !important;
+    }
+    #sidebar.active ul li a {
+        padding: 10px 0 !important;
+        float: left !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    #sidebar.active ul li a i {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 0 5px 0 !important;
+        font-size: 24px !important;
+    }
+    #sidebar.active ul ul a {
+        padding: 10px !important ;
+    }
+    #sidebar.active .dropdown-toggle::after {
+        display: none !important;
+    }
+    nav#sidebar.active .logo_big {
+        text-align: center !important;
+        padding: 8px 0 7px !important;
+    }
+    #sidebar.active .logo_big img {
+        height: 45px !important;
+    }
+    #sidebar.active .logo_section {
+        padding: 0 !important;
+        margin-bottom: 10px !important;
+        background: #fff !important;
+        width: 100% !important;
+    }
+    #sidebar.active ul.components {
+        padding: 0 !important;
+    }
+    #sidebar.active .logo_big {
+        display: none !important;
+    }
+    .logo_icon {
+        display: none !important;
+    }
+    #sidebar.active .logo_icon {
+        display: block !important;
+    }
+    #sidebar.active .logo_big img {
+        height: 45px !important;
+    }
+    #sidebar.active h4 {
+        display: none !important;
+    }
+    #sidebar.active .sidebar_user_info {
+        display: none !important;
+    }
+    #sidebar.active ul li a span {
+        font-size: 13px !important;
+    }
+    #sidebar ul li a i {}
+}
+
+
+/*-----------------------------------
+  end sidebar small only desktop
+-----------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .counter_section {
+        display: block !important;
+    }
+    .couter_icon {
+        display: block !important;
+        width: 100% !important;
+    }
+    .couter_icon>div {
+        padding-right: 0 !important;
+    }
+    .counter_no p.total_no {
+        text-align: center !important;
+    }
+    .counter_no .head_couter {
+        text-align: center !important;
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .counter_section {
+        display: block !important;
+    }
+    .couter_icon {
+        display: block !important;
+        width: 100% !important;
+    }
+    .couter_icon>div {
+        padding-right: 0 !important;
+    }
+    .counter_no p.total_no {
+        text-align: center !important;
+    }
+    .counter_no .head_couter {
+        text-align: center !important;
+        font-size: 16px !important;
+    }
+    .dashboard_2 .social_cont ul li {
+        padding: 0 !important;
+    }
+}
+.formbigscreen{
+    text-align: right;
+}
+@media (min-width:768px){
+.formbigscreen{
+    text-align: right;
+    padding-left: 200px !important;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        width: 100% !important;
+        padding: 0 20px !important;
+    }
+    .info_people .user_info_cont {
+        width: 60% !important;
+        padding-left: 30px !important;
+        padding-top: 0 !important;
+    }
+    .fw_icon {
+        width: 33.33% !important;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        width: 100% !important;
+        padding: 0 20px !important;
+    }
+    .padding_infor_info {
+        padding: 20px 20px !important;
+    }
+    .payment_option li {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        width: 100% !important;
+        padding: 0 20px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        width: 100% !important;
+        padding: 0 20px !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    * {
+        box-sizing: border-box !important;
+    }
+    #sidebar {
+        min-width: 80px !important;
+        max-width: 80px !important;
+        text-align: center !important;
+        margin-left: -80px !important ;
+    }
+    #sidebar.active {
+        margin-left: 0 !important ;
+    }
+    #sidebar .sidebar-header h3,
+    #sidebar .CTAs {
+        display: none !important;
+    }
+    #sidebar .sidebar-header strong {
+        display: block !important;
+    }
+    /*-- responsive --*/
+    #sidebar.active+#content .topbar {
+        transition: ease all 0.3s !important;
+    }
+    .topbar {
+        padding-left: 0 !important;
+        min-width: 320px !important;
+    }
+    #sidebar.active+#content .topbar {
+        padding-left: 0 !important;
+        min-width: 300px !important;
+        left: 200px !important;
+    }
+    #content {
+        padding: 60px 15px 25px 15px !important;
+
+    }
+    #sidebar.active {
+        min-width: 200px !important;
+        max-width: 200px !important;
+        text-align: left !important;
+    }
+    #sidebar.active+#content {
+        padding-left: 0 !important;
+        left: 250px !important;
+        position: relative !important;
+        min-width: 320px !important;
+        height: auto !important;
+        transition: ease all 0.3s !important;
+    }
+    .right_topbar .icon_info ul.user_profile_dd {
+        display: none !important;
+    }
+    .right_topbar {
+        float: right !important;
+        padding: 0 !important;
+        margin: 5px 15px 5px 0 !important;
+    }
+    .sidebar_toggle {
+        padding: 14px 22px 13px !important;
+    }
+    .logo_section img {
+        height: 38px !important;
+        padding: 0 !important;
+        margin: 12px 0 0 15px !important;
+    }
+    .icon_info ul li {
+        width: 30px !important;
+    }
+    .icon_info ul li a {
+        font-size: 16px !important;
+    }
+    .logo_section img.logo_icon {
+        display: none !important;
+    }
+}
+
+@media (max-width: 350px) {
+    .icon_info ul li {
+        margin: 15px 0 0 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .counter_section {
+        padding: 30px 25px !important;
+    }
+    .counter_no {
+        padding: 0 !important;
+    }
+    .counter_no .head_couter {
+        font-size: 16px !important;
+    }
+    #testimonial_slider.carousel .carousel-control {
+        top: -35px !important;
+    }
+    .content.testimonial {
+        margin-top: 50px !important;
+    }
+    #testimonial_slider.carousel .testimonial {
+        font-size: 13px !important;
+        line-height: normal !important;
+    }
+    .progress_bar {
+        padding: 15px 25px 50px 25px !important;
+    }
+    .dash_head {
+        padding: 30px 30px 25px !important;
+    }
+    .task_list li {
+        padding: 20px 30px !important;
+    }
+    .task_list li a {
+        color: #99abb4 !important;
+        font-size: 15px !important;
+        line-height: normal !important;
+        margin-bottom: 10px !important;
+        float: left !important;
+        width: 100% !important;
+    }
+    .msg_list_main ul li {
+        display: block !important;
+    }
+    .msg_list_main ul li>span:nth-child(1) {
+        margin-right: 20px !important;
+        margin-bottom: 10px !important;
+    }
+    /*----- widgets page css -----*/
+    .info_people {
+        padding: 25px !important;
+        display: block !important;
+    }
+    .info_people .p_info_img {
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .info_people .p_info_img img {
+        width: 90px !important;
+    }
+    .info_people .user_info_cont {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-top: 25px !important;
+        text-align: center !important;
+    }
+    .calendar {
+        overflow: auto !important;
+    }
+    /** accordian css **/
+    .tab_style3 .tabbar {
+        display: block !important;
+    }
+    .tab_style3 #v-pills-tabContent {
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 25px !important;
+    }
+    .pagination.button_section {
+        display: block !important;
+    }
+    .pagination.button_section .btn-group {
+        margin: 5px 0 0 !important;
+    }
+    .fw_icon {
+        width: 50% !important;
+    }
+    /**-- email page --**/
+    .mail-box {
+        float: left !important;
+        width: 100% !important;
+    }
+    .mail-box .sm-side {
+        width: 100% !important;
+        float: left !important;
+    }
+    .mail-box .lg-side {
+        background: none repeat scroll 0 0 #fff !important;
+        border-radius: 0 4px 4px 0 !important;
+        width: 100% !important;
+        float: left !important;
+        overflow: auto !important;
+    }
+    aside.lg-side .inbox-body {
+        min-width: 565px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .table.table-striped.projects {
+        min-width: 780px !important;
+    }
+    /** login page **/
+    .full_height {
+        height: auto !important;
+    }
+    .login_section {
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+    }
+    .login_form form .field input {
+        max-width: 395px !important;
+        width: 100% !important;
+    }
+    .login_form form .field label.label_field {
+        text-align: left !important;
+    }
+    .login_form form .field {
+        display: block !important;
+        margin: 0 0 20px !important;
+        float: left !important;
+        width: 100% !important;
+    }
+    .label_field.hidden {
+        display: none !important;
+    }
+    .login_form form .field .form-check-label {
+        float: left !important;
+        width: 100% !important;
+    }
+    .forgot {
+        float: left !important;
+    }
+    .error_page h3 {
+        font-size: 36px !important;
+        line-height: 45px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .model_bt {
+        padding: 11px 0 10px !important;
+        width: 100% !important;
+    }
+    .fw_icon {
+        width: 100% !important;
+    }
+    aside .inbox-head .position.search_inbox {
+        display: none !important;
+    }
+    .contact_inner .left {
+        width: 100% !important;
+        float: left !important;
+        padding-right: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .contact_inner .right {
+        width: 100% !important;
+        float: left !important;
+    }
+    .bottom_list .right_button {
+        float: right !important;
+        display: flex !important;
+    }
+    .bottom_list .right_button button {
+        margin: 0 0 0 5px !important;
+    }
+    .dis_flex {
+        display: block !important;
+        margin: 0 !important;
+    }
+    .dis_flex .profile_img {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+    }
+}

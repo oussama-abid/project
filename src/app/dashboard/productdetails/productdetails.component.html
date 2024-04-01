@@ -1,0 +1,134 @@
+
+
+
+  
+  
+<div class="midde_cont formbigscreen">
+  <div class="container-fluid">
+     <div class="row column_title">
+       
+     </div>
+     <!-- row -->
+     <div class="row column4 graph">
+
+        <!-- funcation section -->
+       
+     
+        <!-- table section -->
+       
+        <!-- table section -->
+        <div class="col-md-8">
+           <div class="white_shd full margin_bottom_30">
+           
+
+
+
+           
+              <div class="table_section padding_infor_info">
+                <div class="formdiv">
+                  <h2 class="section-title align-right"> تفاصيل البضائع</h2>
+                  
+                  <div class="card card-lg">
+                    <div class="card-body" *ngFor="let product of products; let i = index">
+                      <div class="row" style="text-align: right;">
+                        
+                          <div class="col">{{ product.Deliverynumber }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            رقم الشحنة
+                          </h3>
+                        </div>
+                      </div>
+                    
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.Quantity }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            الكمية
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.Type }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            النوع
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.dealer.name }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            التاجر
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.ReceivingDate }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            تاريخ الاستلام
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.ShipmentDepartureDate }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            موعد تحرك الشحنة 
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.Shipmentlocation }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            اين الشحنة الان 
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.paidamount }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            المبلغ المدفوع
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.remainingaamount }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            المبلغ المتبقي 
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.Recipient }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            اسم المستقبل
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row" style="text-align: right;">
+                          <div class="col">{{ product.Deliveryaddress }}</div>
+                        <div class="col">
+                          <h3 class="card-title h5" style="text-align: right">
+                            عنوان التوصيل
+                          </h3>
+                        </div>
+                      </div>
+                      <a (click)="pdf(product.id)" style="color: red !important;  font-size: 20px; float: left;">طباعة الملف <i class="bi bi-printer"></i></a>
+                      
+                    </div>
+                  </div>
+              </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+ 
+</div>

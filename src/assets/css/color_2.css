@@ -1,0 +1,100 @@
+/*------------------------------------------------------------------
+    File Name: color_2.css
+-------------------------------------------------------------------*/
+
+.topbar .navbar {
+    background: #fff !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+}
+
+.sidebar_user_info {
+    background: #fff !important;
+}
+
+.sidebar_toggle {
+    background: #ce1547 !important;
+}
+
+.icon_info ul.user_profile_dd > li {
+    background: #ce1547 !important;
+}
+
+.icon_info span.badge {
+    background: #ce1547 !important;
+}
+
+.icon_info ul li a {
+    color: #333 !important;
+}
+
+.user_info h6 {
+    color: #222 !important;
+}
+
+.counter_section .counter_no p.total_no {
+    color: #fff !important;
+}
+
+.counter_section .counter_no p.head_couter {
+    color: rgba(255,255,255,.7) !important;
+}
+
+#sidebar h4 {
+    background: #f3f3f3 !important;
+    color: #222 !important;
+    border-bottom: none !important;
+}
+#sidebar a {
+    color: #222 !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+    padding: 21px 25px 19px !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
+
+#sidebar {
+    background-color: #fff !important;
+    background-image: url('images/layout_img/pattern_h.png') !important;
+}
+
+#sidebar ul.components ul {
+    background: #fff !important;
+    padding: 0 !important;
+}
+
+#sidebar ul.components li ul li a {
+    border-top: solid #ddd 1px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+ 
+#sidebar ul li a {
+	color: #222 !important;
+    font-size: 18px !important;
+}
+
+#sidebar ul.components ul li a {
+    color: #333 !important;
+}
+
+
+#sidebar ul.components ul li a:hover {
+    color: #b80909 !important;
+}
+
+#sidebar ul li a:hover, #sidebar ul li a:focus {
+    color: #ce1547 !important;
+}
+
+.dark_bg {
+    background: #ce1547 !important;
+}
+
+.progress.skill-bar .progress-bar {
+    background-color: #ce1547 !important;
+}
+
+.dash_head {
+    background-color: #ce1547 !important;
+}
